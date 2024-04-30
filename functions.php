@@ -131,6 +131,8 @@ function create_posttype() {
             'has_archive' => true,
             'rewrite' => array('slug' => 'interfuses'),
             'show_in_rest' => true,
+			'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', 'categories' ),
+			'taxonomies' => array('category', 'post_tag')
         )
     );
 }
